@@ -1,7 +1,7 @@
 ---
 title: Our Services
 type: products
-image: /img/products-jumbotron.jpg
+image: img/bnr01.jpg
 intro:
   heading: What we offer
   description: Kaldi is the ultimate spot for coffee lovers who want to learn
