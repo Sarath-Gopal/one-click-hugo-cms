@@ -33,21 +33,6 @@ products:
     text: "Wedding Processions (Kalyana Melam) : Enhance your wedding with the
       majestic beats of Kalyana Melam. Ideal for groom/baraat entries, bride
       welcomes, and stage performances, we add grandeur to your big day."
-  - text: "Temple Festivals & Spiritual Events : Rooted in Kerala's temple
-      traditions, our team is experienced in performing for poojas, processions,
-      and festival utsavams with spiritual intensity and precision."
-    image: img/img_8696.jpg
-  - text: "Stage Shows & Cultural Events : From college fests and TV appearances to
-      public events and private functions, we offer dynamic performances that
-      energise any audience."
-    image: img/img_8696.jpg
-  - text: "Instrumental Fusions : We create magical memories by unique
-      collaborations like Chenda–Violin Fusion, Chenda–DJ Fusion etc."
-    image: img/img_8696.jpg
-  - text: "Customised Melam Performances : We tailor our ensemble and style to your
-      event’s scale and purpose—be it intimate gatherings or large-scale
-      events."
-    image: img/img_8696.jpg
 values:
   heading: Our values
   text: Coffee is an amazing part of human culture but it has a dark side too –
