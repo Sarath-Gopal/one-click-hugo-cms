@@ -25,17 +25,29 @@ intro:
     Chenda–Violin Fusion and Chenda–DJ Fusion. We also offer customised Melam
     performances tailored to suit the theme and scale of your event
 products:
-  - image: /img/illustrations-coffee-gear.svg
-    text: We offer a small, but carefully curated selection of brewing gear and
-      tools for every taste and experience level. No matter if you roast your
-      own beans or just bought your first french press, you’ll find a gadget to
-      fall in love with in our shop.
-  - image: img/illustrations-coffee.svg
-    text: We sell green and roasted coffee beans that are sourced directly from
-      independent farmers and farm cooperatives. We’re proud to offer a variety
-      of coffee beans grown with great care for the environment and local
-      communities. Check our post or contact us directly for current
-      availability.
+  - image: img/img_8696.jpg
+    text: "Chenda Melam (Classical & Fusion) : We perform traditional Chenda Melam
+      in its purest form and also offer fusion adaptations for modern
+      stages—perfect for both religious ceremonies and cultural showcases."
+  - image: img/img_8696.jpg
+    text: "Wedding Processions (Kalyana Melam) : Enhance your wedding with the
+      majestic beats of Kalyana Melam. Ideal for groom/baraat entries, bride
+      welcomes, and stage performances, we add grandeur to your big day."
+  - text: "Temple Festivals & Spiritual Events : Rooted in Kerala's temple
+      traditions, our team is experienced in performing for poojas, processions,
+      and festival utsavams with spiritual intensity and precision."
+    image: img/img_8696.jpg
+  - text: "Stage Shows & Cultural Events : From college fests and TV appearances to
+      public events and private functions, we offer dynamic performances that
+      energise any audience."
+    image: img/img_8696.jpg
+  - text: "Instrumental Fusions : We create magical memories by unique
+      collaborations like Chenda–Violin Fusion, Chenda–DJ Fusion etc."
+    image: img/img_8696.jpg
+  - text: "Customised Melam Performances : We tailor our ensemble and style to your
+      event’s scale and purpose—be it intimate gatherings or large-scale
+      events."
+    image: img/img_8696.jpg
 values:
   heading: Our values
   text: Coffee is an amazing part of human culture but it has a dark side too –
