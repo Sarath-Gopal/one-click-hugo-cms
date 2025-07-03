@@ -1,7 +1,7 @@
 ---
 title: Rhythm of Kerala
-subtitle: Support sustainable farming while enjoying a cup
-image: /img/home-jumbotron.jpg
+subtitle: Music embraces the soul
+image: img/dsc07602-copy.jpg
 blurb:
   heading: Why Kaldi?
   text: Kaldi is the coffee store for everyone who believes that great coffee
