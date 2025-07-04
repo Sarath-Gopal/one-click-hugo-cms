@@ -2,16 +2,14 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "site/static/img" # Folder where user uploaded files should go
+media_folder: "site/static/img"
 public_folder: "img"
 
 collections:
+  # Collection for Individual Blog Posts (if you use them)
   - name: "post"
-    label: "Post"
+    label: "Blog Posts"
     folder: "site/content/post"
-    # This 'filter' line is the critical change.
-    # It tells the CMS that only files NOT named _index.md are "posts".
-    filter: {field: "path",- value: "site/content/post/_index.md"}
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
@@ -19,22 +17,19 @@ collections:
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-      
+
+  # Collection for the Main Site Pages
   - name: "pages"
-    label: "Pages"
+    label: "Site Pages"
     files:
       - file: "site/content/_index.md"
         label: "Home Page"
         name: "home"
         fields:
-          # ... (all your existing homepage fields) ...
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: Image, name: image, widget: image}
           - {label: "Blurb", name: blurb, widget: object, fields: [
-              {label: "Heading", name: "heading", widget: string},
-              {label: "Text", name: "text", widget: "text"}]}
-          - {label: "Intro", name: intro, widget: object, fields: [
               {label: "Heading", name: "heading", widget: string},
               {label: "Text", name: "text", widget: "text"}]}
           - label: "Homepage Gallery"
@@ -77,11 +72,14 @@ collections:
                 fields:
                   - {label: Image, name: image, widget: image}
                   - {label: Text, name: text, widget: text}
-      
-      # This is the entry for your main Gallery page
+
+  # THIS IS THE NEW DEDICATED GALLERY COLLECTION
+  - name: "gallery_settings"
+    label: "Gallery Page"
+    files:
       - file: "site/content/post/_index.md"
-        label: "Gallery Page"
-        name: "gallery-page"
+        label: "Gallery Page Images"
+        name: "gallery-page-content"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - label: "Gallery"
@@ -94,13 +92,13 @@ collections:
                 name: images
                 widget: list
                 field: {label: "Image", name: "image", widget: "image"}
-  
+
   - name: "site_settings"
     label: "Site Settings"
     files:
       - file: "site/hugo.toml"
-        label: Hugo Config
-        name: config
+        label: "Hugo Config"
+        name: "config"
         editor:
           preview: false
         fields:
