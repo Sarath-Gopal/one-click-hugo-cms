@@ -1,7 +1,25 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title) }}
+<!-- This is the new Heading section -->
+<div class="bg-off-white pv4">
+  <div class="ph3 mw7 center">
+    <div class="tc"> <!-- This div centers the headings -->
+      <h2 class="f2 b lh-title mb2">{{.Params.intro.heading}}</h2>
+      <p class="mb4 mw6 center">{{.Params.intro.subheading}}</p>
+    </div>
 
-{{ partial "4-up" .Params.intro }}
+    <!-- This is the existing grid of your 6 services -->
+    <div class="flex-ns flex-wrap mhn2-ns mb3">
+      {{ range .Params.intro.blurbs }}
+        <div class="ph2-ns w-third-ns mb4">
+          <img src="{{ .image }}" alt="" class="center db mb3" style="width: 240px">
+          <p>{{ .text }}</p>
+        </div>
+      {{ end }}
+    </div>
+
+  </div>
+</div>
+<!-- End of new section -->
 
 {{ end }}
