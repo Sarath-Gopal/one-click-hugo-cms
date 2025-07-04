@@ -6,10 +6,12 @@ media_folder: "site/static/img"
 public_folder: "img"
 
 collections:
-  # Collection for Individual Blog Posts (if you use them)
+  # Collection for Individual Blog Posts
   - name: "post"
-    label: "Blog Posts"
+    label: "Blog Posts" # Renamed for clarity
     folder: "site/content/post"
+    # This filter line is crucial. It tells this collection to IGNORE the _index.md file.
+    filter: {field: "path",- value: "site/content/post/_index.md"}
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
@@ -26,6 +28,7 @@ collections:
         label: "Home Page"
         name: "home"
         fields:
+          # ... (Your Home Page fields) ...
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: Image, name: image, widget: image}
@@ -72,14 +75,11 @@ collections:
                 fields:
                   - {label: Image, name: image, widget: image}
                   - {label: Text, name: text, widget: text}
-
-  # THIS IS THE NEW DEDICATED GALLERY COLLECTION
-  - name: "gallery_settings"
-    label: "Gallery Page"
-    files:
+      
+      # This is the NEW DEDICATED entry for your Gallery Page
       - file: "site/content/post/_index.md"
-        label: "Gallery Page Images"
-        name: "gallery-page-content"
+        label: "Gallery Page"
+        name: "gallery-page"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - label: "Gallery"
@@ -95,6 +95,7 @@ collections:
 
   - name: "site_settings"
     label: "Site Settings"
+    # ... (Your Site Settings fields) ...
     files:
       - file: "site/hugo.toml"
         label: "Hugo Config"
