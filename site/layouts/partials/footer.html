@@ -10,25 +10,33 @@
       Ready to plan your next event? Contact us today for a free consultation. Let's create something extraordinary together.
     </p>
 
-    <!-- Contact Info Row -->
-    <div class="flex-ns flex-wrap justify-center items-center">
+    <!-- Contact Info Container -->
+    <div>
       
-      <!-- Phone Number with Emoji -->
-      <a href="tel:+919656655695" class="link white dim pa3 f5 flex items-center">
-        <span class="mr2">📞</span> +91-9656655695
-      </a>
+      <!-- Phone Number -->
+      <div class="mb3">
+        <a href="tel:+919656655695" class="link white dim f5 inline-flex items-center">
+          <span class="mr2">📞</span>
+          <span>+91-9656655695</span>
+        </a>
+      </div>
 
-      <!-- Email Address with Emoji -->
-      <a href="mailto:rhythmofkeralabangalore@gmail.com" class="link white dim pa3 f5 flex items-center">
-        <span class="mr2">✉️</span> rhythmofkeralabangalore@gmail.com
-      </a>
+      <!-- Email Address -->
+      <div class="mb3">
+        <a href="mailto:rhythmofkeralabangalore@gmail.com" class="link white dim f5 inline-flex items-center">
+          <span class="mr2">✉️</span>
+          <span>rhythmofkeralabangalore@gmail.com</span>
+        </a>
+      </div>
 
-      <!-- Instagram Link with SVG Icon -->
-      <a href="https://www.instagram.com/your-handle-here" target="_blank" rel="noopener" class="link white dim pa3 f5 flex items-center">
-        <!-- This is the partial that calls your SVG file -->
-        {{ partial "social-icon" (dict "link" "https://www.instagram.com/your-handle-here" "svg" "icons-instagram" "alt" "Rhythm of Kerala on Instagram") }}
-        <span class="ml2">Instagram</span>
-      </a>
+      <!-- Instagram Link -->
+      <div>
+        <a href="https://www.instagram.com/your-handle-here" target="_blank" rel="noopener" class="link white dim f5 inline-flex items-center">
+          <!-- Using a camera emoji for simplicity and guaranteed alignment -->
+          <span class="mr2">📷</span>
+          <span>Instagram</span>
+        </a>
+      </div>
 
     </div>
 
