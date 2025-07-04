@@ -1,16 +1,36 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "title" "Latest stories") }}
+<!-- This is the new Gallery section -->
+<div class="bg-off-white pv4">
+  <div class="ph3 mw8 center"> <!-- mw8 gives it a bit more width -->
+    <div class="tc"> <!-- This div centers the headings -->
+      <h2 class="f2 b lh-title mb2">{{.Params.gallery.heading}}</h2>
+      <p class="mb4 mw6 center">{{.Params.gallery.subheading}}</p>
+    </div>
 
-<div class="mw7 center">
-  <ul id="blog-list" class="flex-ns flex-wrap mhn1-ns pa3">
-      {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
-          <li class="w-50-ns ph1-ns flex">
-            {{ .Render "li"}}
-          </li>
+    <!-- This is the 3-column image grid -->
+    <div class="flex-ns flex-wrap mhn2-ns mb3">
+      {{ range .Params.gallery.images }}
+        <div class="ph2-ns w-third-ns mb4">
+          <img src="{{ . }}" alt="Gallery image" class="db">
+        </div>
       {{ end }}
-  </ul>
-  {{ partial "pagination" . }}
-</div>
+    </div>
 
-{{end}}
+    <!-- "Upload Photos" button - only visible in CMS/Admin -->
+    {{ if .IsHome }} <!-- This is a simple trick to hide it on the live site -->
+      <div class="tc dn"> <!-- "dn" means display: none -->
+        <a href="/admin/#/collections/pages/entries/gallery" class="btn raise">{{ .Params.gallery.buttonText }}</a>
+      </div>
+    {{ else }}
+      <!-- This block will be shown on the live Gallery page, but we'll hide the button -->
+      <div class="tc dn"> <!-- We use "dn" (display: none) to hide it from public view -->
+        <a href="/admin/#/collections/pages/entries/gallery" class="btn raise">{{ .Params.gallery.buttonText }}</a>
+      </div>
+    {{ end }}
+
+  </div>
+</div>
+<!-- End of new Gallery section -->
+
+{{ end }}
