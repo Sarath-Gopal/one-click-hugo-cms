@@ -24,19 +24,16 @@ intro:
     Stage Shows & Cultural Performances, and unique collaborations like
     Chenda–Violin Fusion and Chenda–DJ Fusion. We also offer customised Melam
     performances tailored to suit the theme and scale of your event
-
-# This is the new gallery section data
 gallery:
-  heading: "Our Gallery"
-  subheading: "A glimpse into the beautiful moments we've created."
+  heading: Our Gallery
+  subheading: A glimpse into the beautiful moments we've created.
   images:
-    - "https://picsum.photos/id/1015/800/600"
-    - "https://picsum.photos/id/1043/800/600"
-    - "https://picsum.photos/id/1059/800/600"
-    - "https://picsum.photos/id/1062/800/600"
-  buttonText: "View More"
-  buttonLink: "/post"
-
+    - img/img_2455_35.jpg
+    - img/img_4918_35.jpg
+    - img/img_35.jpg
+    - img/img_2629_35.jpg
+  buttonText: View More
+  buttonLink: /post
 values:
   heading: Our values
   text: Coffee is an amazing part of human culture but it has a dark side too –
