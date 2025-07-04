@@ -6,12 +6,12 @@ media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
-    folder: "site/content/post" # The path to the folder where the documents are stored
-    path: "{{slug}}/index" # Each document is inside a folder with the slug name.
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
+  - name: "post"
+    label: "Post"
+    folder: "site/content/post"
+    path: "{{slug}}/index"
+    create: true
+    fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Intro Blurb", name: "description", widget: "text"}
@@ -24,6 +24,7 @@ collections: # A list of collections the CMS should be able to edit
         label: "Home Page"
         name: "home"
         fields:
+          # ... (all your existing homepage fields are here)
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: Image, name: image, widget: image}
@@ -33,8 +34,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Intro", name: intro, widget: object, fields: [
               {label: "Heading", name: "heading", widget: string},
               {label: "Text", name: "text", widget: "text"}]}
-          
-          # This is the NEW section we added for the gallery
           - label: "Homepage Gallery"
             name: gallery
             widget: object
@@ -47,9 +46,6 @@ collections: # A list of collections the CMS should be able to edit
                 name: images
                 widget: list
                 field: {label: "Image", name: "image", widget: "image"}
-
-          # This "Values" field is no longer displayed on the homepage,
-          # but we can leave it here in case you want to use it again.
           - {label: "Values", name: "values", widget: "object", fields: [
               {label: "Heading", name: "heading", widget:string},
               {label: "Text", name: "text", widget: "text"}]}
@@ -66,7 +62,6 @@ collections: # A list of collections the CMS should be able to edit
         name: "products"
         fields:
           - {label: Title, name: title, widget: string}
-          # This section has been updated to match the new Services page layout
           - label: Intro
             name: intro
             widget: object
@@ -79,12 +74,28 @@ collections: # A list of collections the CMS should be able to edit
                 fields:
                   - {label: Image, name: image, widget: image}
                   - {label: Text, name: text, widget: text}
+      
+      # This is the NEW entry for your main Gallery page
+      - file: "site/content/post/_index.md"
+        label: "Gallery Page"
+        name: "gallery-page"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - label: "Gallery"
+            name: gallery
+            widget: object
+            fields:
+              - {label: "Heading", name: "heading", widget: string}
+              - {label: "Subheading", name: "subheading", widget: string}
+              - {label: "Button Text", name: "buttonText", widget: string}
+              - label: "Images"
+                name: images
+                widget: list
+                field: {label: "Image", name: "image", widget: "image"}
 
   - name: "site_settings"
     label: "Site Settings"
     files:
-      # The footer section is no longer used, so it has been removed from the CMS
-      # to avoid confusion.
       - file: "site/hugo.toml"
         label: Hugo Config
         name: config
