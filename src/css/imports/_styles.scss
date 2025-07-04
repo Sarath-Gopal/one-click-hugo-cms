@@ -74,3 +74,15 @@
   justify-content: center; /* Horizontally centers the content */
   text-align: center;      /* Ensures the text itself is centered if it wraps */
 }
+
+/* A new, extra-large font size for the homepage headline */
+.f-headline-huge {
+  font-size: 6rem; /* This is twice the size of f1 (3rem) */
+}
+
+/* Media query to make the font slightly smaller on mobile phones */
+@media screen and (max-width: 40em) {
+  .f-headline-huge {
+    font-size: 4rem;
+  }
+}
