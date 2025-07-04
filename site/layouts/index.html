@@ -2,7 +2,13 @@
 
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
-{{ partial "short-text" .Params.blurb}}
+<!-- New section for "Why Rhythm of Kerala?" -->
+<div class="bg-grey-1 pv4">
+  <div class="ph3 mw7 center">
+    <h2 class="f2 b lh-title mb2">{{.Params.blurb.heading}}</h2>
+    <p class="mb0">{{.Params.blurb.text}}</p>
+  </div>
+</div>
 
 {{ partial "2-up" .Params }}
 
