@@ -3,11 +3,11 @@
 <div class="ph3 bg-off-white">
 	<div class="center mw7 pv4">
 
-		<!-- Display the page title -->
+		<!-- This heading is already centered -->
 		<h1 class="f2 f1-l b tc lh-title mb4">{{ .Title }}</h1>
 
-		<!-- This will render your multi-line description text -->
-		<div class="cms">
+		<!-- The 'center' and 'measure' classes have been added here -->
+		<div class="cms center measure">
 			{{ .Params.body | markdownify }}
 		</div>
 
