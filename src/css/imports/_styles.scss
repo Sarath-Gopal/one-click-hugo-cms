@@ -59,3 +59,8 @@
   font-weight: 700;    /* Makes the text bold */
   color: #2b2523;      /* Sets a dark color */
 }
+
+/* Custom style for hero text with shadow */
+.hero-text-shadow {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds a soft, dark shadow */
+}
