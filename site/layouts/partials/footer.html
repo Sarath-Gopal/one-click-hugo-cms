@@ -1,38 +1,38 @@
-<footer class="bg-black ph3 pv4 white">
+<footer class="bg-black white ph3 pv5">
 
-	<div class="mw7 center pt3">
+  <div class="mw8 center tc">
 
-		<div class="measure-narrow center mb4">
+    <!-- Section Title -->
+    <h2 class="f2 b lh-title mb3">Get In Touch</h2>
 
-			{{/* {{ partial "newsletter-form" . }} */}}
+    <!-- Subtitle / Blurb -->
+    <p class="f5 lh-copy measure-wide center mb4">
+      Ready to plan your next event? Contact us today for a free consultation. Let's create something extraordinary together.
+    </p>
 
-		</div>
+    <!-- Contact Info Row -->
+    <div class="flex-ns flex-wrap justify-center items-center">
+      
+      <!-- Phone Number -->
+      <a href="tel:+919656655695" class="link white dim pa3 f5 flex items-center">
+        {{ partial "svg" (dict "svg" "icons-phone" "class" "w1 h1 mr2") }}
+        +91-9656655695
+      </a>
 
-		<div class="flex-ns justify-between">
+      <!-- Email Address -->
+      <a href="mailto:rhythmofkeralabangalore@gmail.com" class="link white dim pa3 f5 flex items-center">
+        {{ partial "svg" (dict "svg" "icons-mail" "class" "w1 h1 mr2") }}
+        rhythmofkeralabangalore@gmail.com
+      </a>
 
-			<div>
-				<h3 class="f4 b lh-title mb1 primary">Kaldi</h3>
-				<ul class="mb3">
-					<li><a href="/" class="link">Home</a></li>
-					<li><a href="/products" class="link">Our products</a></li>
-					<li><a href="/values" class="link">About</a></li>
-					<li><a href="/post" class="link">Blog</a></li>
-					<li><a href="/contact" class="link">Contact</a></li>
-				</ul>
-			</div>
+      <!-- Instagram Link -->
+      <a href="#" class="link white dim pa3 f5 flex items-center"> <!--- <<< Add your Instagram URL in the href="#" -->
+        {{ partial "svg" (dict "svg" "icons-instagram" "class" "w1 h1 mr2") }}
+        Instagram
+      </a>
 
-			<div>
-				<h3 class="f4 b lh-title mb2 primary">Social media</h3>
-				<ul class="mhn2">
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook" "alt" "Kaldi on Facebook") }}
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter" "alt" "Kaldi on Twitter") }}
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-instagram" "alt" "Kaldi on Instagram") }}
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-vimeo" "alt" "Kaldi on Vimeo") }}
-				</ul>
-			</div>
+    </div>
 
-		</div>
-	</div>
+  </div>
 
 </footer>
-
