@@ -13,19 +13,21 @@
     <!-- Contact Info Row -->
     <div class="flex-ns flex-wrap justify-center items-center">
       
-      <!-- Phone Number -->
-      <a href="tel:+919656655695" class="link white dim pa3 f5">
-        Phone: +91-9656655695
+      <!-- Phone Number with Emoji -->
+      <a href="tel:+919656655695" class="link white dim pa3 f5 flex items-center">
+        <span class="mr2">📞</span> +91-9656655695
       </a>
 
-      <!-- Email Address -->
-      <a href="mailto:rhythmofkeralabangalore@gmail.com" class="link white dim pa3 f5">
-        Email: rhythmofkeralabangalore@gmail.com
+      <!-- Email Address with Emoji -->
+      <a href="mailto:rhythmofkeralabangalore@gmail.com" class="link white dim pa3 f5 flex items-center">
+        <span class="mr2">✉️</span> rhythmofkeralabangalore@gmail.com
       </a>
 
-      <!-- Instagram Link -->
-      <a href="https://www.instagram.com/your-handle-here" target="_blank" rel="noopener" class="link white dim pa3 f5">
-        Instagram
+      <!-- Instagram Link with SVG Icon -->
+      <a href="https://www.instagram.com/your-handle-here" target="_blank" rel="noopener" class="link white dim pa3 f5 flex items-center">
+        <!-- This is the partial that calls your SVG file -->
+        {{ partial "social-icon" (dict "link" "https://www.instagram.com/your-handle-here" "svg" "icons-instagram" "alt" "Rhythm of Kerala on Instagram") }}
+        <span class="ml2">Instagram</span>
       </a>
 
     </div>
