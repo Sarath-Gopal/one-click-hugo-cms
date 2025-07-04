@@ -24,15 +24,19 @@ intro:
     Stage Shows & Cultural Performances, and unique collaborations like
     Chenda–Violin Fusion and Chenda–DJ Fusion. We also offer customised Melam
     performances tailored to suit the theme and scale of your event
-products:
-  - image: img/img_8696.jpg
-    text: "Chenda Melam (Classical & Fusion) : We perform traditional Chenda Melam
-      in its purest form and also offer fusion adaptations for modern
-      stages—perfect for both religious ceremonies and cultural showcases."
-  - image: img/img_8696.jpg
-    text: "Wedding Processions (Kalyana Melam) : Enhance your wedding with the
-      majestic beats of Kalyana Melam. Ideal for groom/baraat entries, bride
-      welcomes, and stage performances, we add grandeur to your big day."
+
+# This is the new gallery section data
+gallery:
+  heading: "Our Gallery"
+  subheading: "A glimpse into the beautiful moments we've created."
+  images:
+    - "https://picsum.photos/id/1015/800/600"
+    - "https://picsum.photos/id/1043/800/600"
+    - "https://picsum.photos/id/1059/800/600"
+    - "https://picsum.photos/id/1062/800/600"
+  buttonText: "View More"
+  buttonLink: "/post"
+
 values:
   heading: Our values
   text: Coffee is an amazing part of human culture but it has a dark side too –
