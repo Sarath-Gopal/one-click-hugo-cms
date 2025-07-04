@@ -14,7 +14,22 @@
   }
 }
 
-/* Custom Footer Styles */
-.footer-contact-item svg {
-  fill: currentColor; /* Makes SVG icons inherit the white text color */
+/* 
+  Styles for the social-icon.html partial 
+  This is the part you are missing.
+*/
+.social-icon .link {
+  display: block;
+  position: relative;
+  background-color: white;
+  color: black;
+  border-radius: 100%; /* Makes it a circle */
+  padding: .5rem;      /* Gives it some space */
+}
+
+.social-icon .link svg {
+  display: block;
+  width: 16px;         /* Sets the icon size */
+  height: 16px;        /* Sets the icon size */
+  fill: black;         /* Makes the icon black */
 }
