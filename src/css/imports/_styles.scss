@@ -16,7 +16,6 @@
 
 /* 
   Styles for the social-icon.html partial 
-  This is the part you are missing.
 */
 .social-icon .link {
   display: block;
@@ -32,4 +31,31 @@
   width: 16px;         /* Sets the icon size */
   height: 16px;        /* Sets the icon size */
   fill: black;         /* Makes the icon black */
+}
+
+/*
+ * =================================
+ * Custom Logo and Navigation Styles
+ * =================================
+ */
+
+/* 1. Controls the container for the logo and text */
+.logo-link {
+  padding-top: 0.5rem;      /* Adds space above */
+  padding-bottom: 0.5rem;   /* Adds space below, making the nav bar taller */
+  padding-left: 1rem;     /* Adds space to the left */
+}
+
+/* 2. Controls the logo image size */
+.logo-img {
+  height: 60px;   /* <--- ADJUST THIS VALUE for logo size */
+  width: auto;    /* Keeps the logo from stretching */
+  margin-right: 1rem; /* Space between logo and text */
+}
+
+/* 3. Controls the logo text size */
+.logo-text {
+  font-size: 1.5rem;   /* <--- ADJUST THIS VALUE for text size */
+  font-weight: 700;    /* Makes the text bold */
+  color: #2b2523;      /* Sets a dark color */
 }
