@@ -5,11 +5,11 @@ gallery:
   heading: "Our Gallery"
   subheading: "A glimpse into the beautiful moments we've created."
   images:
-    - "/img/Gallery1"
-    - "/img/Gallery2"
-    - "/img/Gallery3"
-    - "/img/Gallery4"
-    - "/img/Gallery5"
-    - "/img/Gallery6"
+    - "https://rhythmofkerala.com/img/Gallery1.jpg"
+    - "https://rhythmofkerala.com/img/Gallery2.jpg"
+    - "https://rhythmofkerala.com/img/Gallery3.jpg"
+    - "https://rhythmofkerala.com/img/Gallery4.jpg"
+    - "https://rhythmofkerala.com/img/Gallery5.jpg"
+    - "https://rhythmofkerala.com/img/Gallery6.jpg"
   buttonText: "Upload Photos"
 ---
