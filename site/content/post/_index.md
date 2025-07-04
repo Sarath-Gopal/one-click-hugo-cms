@@ -5,11 +5,11 @@ gallery:
   heading: "Our Gallery"
   subheading: "A glimpse into the beautiful moments we've created."
   images:
-    - "https://picsum.photos/id/1018/800/600"
-    - "https://picsum.photos/id/1025/800/600"
-    - "https://picsum.photos/id/1041/800/600"
-    - "https://picsum.photos/id/1044/800/600"
-    - "https://picsum.photos/id/106/800/600"
-    - "https://picsum.photos/id/1084/800/600"
+    - "/img/Gallery1"
+    - "/img/Gallery2"
+    - "/img/Gallery3"
+    - "/img/Gallery4"
+    - "/img/Gallery5"
+    - "/img/Gallery6"
   buttonText: "Upload Photos"
 ---
