@@ -5,11 +5,13 @@ backend:
 media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
 
-collections: # A list of collections the CMS should be able to edit
+collections:
   - name: "post"
     label: "Post"
     folder: "site/content/post"
-    path: "{{slug}}/index"
+    # This 'filter' line is the critical change.
+    # It tells the CMS that only files NOT named _index.md are "posts".
+    filter: {field: "path",- value: "site/content/post/_index.md"}
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
@@ -17,6 +19,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+      
   - name: "pages"
     label: "Pages"
     files:
@@ -24,7 +27,7 @@ collections: # A list of collections the CMS should be able to edit
         label: "Home Page"
         name: "home"
         fields:
-          # ... (all your existing homepage fields are here)
+          # ... (all your existing homepage fields) ...
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: Image, name: image, widget: image}
@@ -75,7 +78,7 @@ collections: # A list of collections the CMS should be able to edit
                   - {label: Image, name: image, widget: image}
                   - {label: Text, name: text, widget: text}
       
-      # This is the NEW entry for your main Gallery page
+      # This is the entry for your main Gallery page
       - file: "site/content/post/_index.md"
         label: "Gallery Page"
         name: "gallery-page"
@@ -87,12 +90,11 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: "Heading", name: "heading", widget: string}
               - {label: "Subheading", name: "subheading", widget: string}
-              - {label: "Button Text", name: "buttonText", widget: string}
               - label: "Images"
                 name: images
                 widget: list
                 field: {label: "Image", name: "image", widget: "image"}
-
+  
   - name: "site_settings"
     label: "Site Settings"
     files:
