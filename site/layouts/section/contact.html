@@ -1,22 +1,15 @@
 {{ define "main" }}
 
 <div class="ph3 bg-off-white">
-	<div class="center mw6 pv3">
+	<div class="center mw7 pv4">
 
-		<img src="{{ .Params.logo }}" alt="" class="db w4 center pv4">
+		<!-- Display the page title -->
+		<h1 class="f2 f1-l b tc lh-title mb4">{{ .Title }}</h1>
 
-		{{ .Content }}
-
-		<div class="flex-ns mb3">
-	        	{{ range .Params.contact_entries }}
-				<div>
-					<h4 class="f4 b lh-title mb2 primary">{{ .heading }}</h4>
-					<p>{{ .text }}</p>
-				</div>
-			{{ end }}
+		<!-- This will render your multi-line description text -->
+		<div class="cms">
+			{{ .Params.body | markdownify }}
 		</div>
-
-		{{ partial "contact-form" . }}
 
 	</div>
 </div>
