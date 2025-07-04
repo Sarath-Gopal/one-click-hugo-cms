@@ -38,29 +38,39 @@
  * Custom Logo and Navigation Styles
  * =================================
  */
-
-/* 1. Controls the container for the logo and text */
 .logo-link {
-  padding-top: 0.5rem;      /* Adds space above */
-  padding-bottom: 0.5rem;   /* Adds space below, making the nav bar taller */
-  padding-left: 1rem;     /* Adds space to the left */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
 }
 
-/* 2. Controls the logo image size */
 .logo-img {
-  height: 60px;   /* <--- ADJUST THIS VALUE for logo size */
-  width: auto;    /* Keeps the logo from stretching */
-  margin-right: 1rem; /* Space between logo and text */
+  height: 60px;
+  width: auto;
+  margin-right: 1rem;
 }
 
-/* 3. Controls the logo text size */
 .logo-text {
-  font-size: 1.5rem;   /* <--- ADJUST THIS VALUE for text size */
-  font-weight: 700;    /* Makes the text bold */
-  color: #2b2523;      /* Sets a dark color */
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2b2523;
 }
 
-/* Custom style for hero text with shadow */
+/* 
+ * =================================
+ * Custom Hero/Jumbotron Styles
+ * =================================
+ */
+
+/* Adds a soft, dark shadow to make text readable on any image */
 .hero-text-shadow {
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds a soft, dark shadow */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* This new section centers the text in the middle of the image */
+.hero-centered {
+  display: flex;
+  align-items: center;     /* Vertically centers the content */
+  justify-content: center; /* Horizontally centers the content */
+  text-align: center;      /* Ensures the text itself is centered if it wraps */
 }
