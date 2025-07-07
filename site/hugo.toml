@@ -9,4 +9,4 @@ title = "Rhythm of Kerala"
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [params]
-images = ["img/og-image.jpg"]
+images = ["img/rok-logo.jpg"]
