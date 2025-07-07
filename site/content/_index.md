@@ -28,7 +28,7 @@ gallery:
   heading: Our Gallery
   subheading: A glimpse into the beautiful moments we've created.
   images:
-    - img/img_2455_35.jpg
+    - img/2f625e39-7e9f-45eb-a98f-a81f08f33bc5.jpeg
     - img/img_4918_35.jpg
     - img/img_35.jpg
     - img/img_2629_35.jpg
