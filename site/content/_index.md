@@ -1,7 +1,9 @@
 ---
 title: Rhythm of Kerala
 subtitle: Music embraces the soul
-description: Rhythm of Kerala is a premier Chendamelam band in Bangalore, offering authentic and fusion performances for weddings, festivals, and corporate events across India.
+description: Rhythm of Kerala is a premier Chendamelam band in Bangalore,
+  offering authentic and fusion performances for weddings, festivals, and
+  corporate events across India.
 image: img/dsc07602-copy.jpg
 blurb:
   heading: Why Rhythm of Kerala?
@@ -30,8 +32,8 @@ gallery:
   subheading: A glimpse into the beautiful moments we've created.
   images:
     - img/2f625e39-7e9f-45eb-a98f-a81f08f33bc5.jpeg
-    - img/img_4918_35.jpg
-    - img/img_35.jpg
+    - img/Gallery1.jpg
+    - img/Gallery6.jpg
     - img/img_2629_35.jpg
   buttonText: View More
   buttonLink: /post
