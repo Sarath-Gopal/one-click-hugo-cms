@@ -34,7 +34,7 @@ gallery:
     - img/2f625e39-7e9f-45eb-a98f-a81f08f33bc5.jpeg
     - img/Gallery1.jpg
     - img/Gallery6.jpg
-    - img/img_2629_35.jpg
+    - img/img_7221.jpeg
   buttonText: View More
   buttonLink: /post
 values:
